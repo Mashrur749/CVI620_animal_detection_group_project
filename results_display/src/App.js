@@ -1,9 +1,12 @@
+import ImageGallery from './components/ImageGallery'
+
 import './App.css';
+import imageData from './seedData.js';
 
 function App() {
   return (
     <div className="App">
-      Hello World
+      <ImageGallery data={imageData}/>
     </div>
   );
 }
