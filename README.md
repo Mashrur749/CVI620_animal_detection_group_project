@@ -1,6 +1,5 @@
 # CVI620 Summative Project
 
----
 ## Summary
 This project is aimed at discovering if an object detection algorithm trained on a specific set of images can transfer what it has learnt to a set of images in a different context.
 
