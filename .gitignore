@@ -1,0 +1,3 @@
+/**/node_modules
+shared/live.sqlite3
+.env
