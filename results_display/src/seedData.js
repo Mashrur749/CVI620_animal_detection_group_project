@@ -11,229 +11,233 @@
 
 let imageData;
 
-export default imageData = [
+export default imageData = 
     {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
-    },
-    {
-        id: 123,
-        filename: "theImage.jpg",
-        frame: 1.56,
-        manual_check: 1,
-        model_check: 1,
-        model_certainty: .69
+        withAnimal: [
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+        ],
+        withoutAnimal: [{
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            },
+            {
+                id: 123,
+                filename: "theImage.jpg",
+                frame: 1.56,
+                manual_check: 1,
+                model_check: 1,
+                model_certainty: .69
+            }
+        ]
     }
-]

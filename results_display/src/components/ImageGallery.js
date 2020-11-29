@@ -29,10 +29,11 @@ const useStyles = makeStyles((theme) => ({
 export default function FullWidthGrid(props) {
     
     const imageData = props.data;
+    const title = props.title;
 
     const classes = useStyles();
 
-  let imageTiles = imageData.map((tile, idx) => {
+  let imageTilesWithAnimal = imageData.withAnimal.map((tile, idx) => {
     return (<Grid key={idx} item xs={6} sm={3}>
         <Paper className={classes.paper}>
             <img className={classes.image} src={"/images/"+tile.filename}/>
@@ -42,16 +43,34 @@ export default function FullWidthGrid(props) {
     </Grid>)
   })
 
+
+  let imageTilesWithoutAnimal = imageData.withoutAnimal.map((tile, idx) => {
+    return (<Grid key={idx} item xs={6} sm={3}>
+        <Paper className={classes.paper}>
+            <img className={classes.image} src={"/images/"+tile.filename}/>
+            <Typography align={"left"}> Frame: {tile.frame} </Typography> 
+            <Typography align={"left"}> Model Certainty: {tile.model_certainty} </Typography>
+        </Paper>
+    </Grid>)
+  })
+
+
   return (
     <div className={classes.root}>
         <header>
-            <Typography align={"center"} variant="h2" className={classes.galleryTitle}> Image Analysis Report </Typography>
+            <Typography align={"center"} variant="h2" className={classes.galleryTitle}> {title} </Typography>
         </header>
 
+        <h4> Images With Animal </h4>
         <Grid container spacing={5}>
-            {imageTiles}
+            {imageTilesWithAnimal}
         </Grid>
 
+        <h4> Images Without Animal </h4>
+
+        <Grid container spacing={5}>
+            {imageTilesWithoutAnimal}
+        </Grid>
     </div>
   );
 }
