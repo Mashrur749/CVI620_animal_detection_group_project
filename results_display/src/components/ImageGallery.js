@@ -69,12 +69,12 @@ export default function FullWidthGrid(props) {
         </header>
 
         <Typography align={"center"} variant="h3" className={classes.sectionTitle}>Images With Animal</Typography>
-        <Grid container spacing={5}>
+        <Grid container spacing={0}>
             {imageTilesWithAnimal}
         </Grid>
 
         <Typography align={"center"} variant="h3" className={classes.sectionTitle}>Images Without Animal</Typography>
-        <Grid container spacing={5}>
+        <Grid container spacing={0}>
             {imageTilesWithoutAnimal}
         </Grid>
     </div>

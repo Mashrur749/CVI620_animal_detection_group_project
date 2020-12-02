@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  root: {   
     flexGrow: 1,
     padding: "1em 0",
   },
@@ -67,8 +67,8 @@ export default function FullWidthGrid(props) {
         <header>
             <Typography align={"center"} variant="h2" className={classes.galleryTitle}> {title} </Typography>
         </header>
-
-        <Grid container spacing={5}>
+        
+        <Grid container spacing={0}>
             {imageTilesWithAnimal}
         </Grid>
     </div>
