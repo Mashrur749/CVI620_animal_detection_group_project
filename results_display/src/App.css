@@ -1,14 +1,18 @@
 nav{
-    text-align: center;
-    width: 100vw;
     background-color: rgba(0,0,0,.7);
     padding: 1em; 
 }
 
 a {
-    margin: 0 .05em;
+    margin: 1px;
     padding: 1em;
     color: rgb(36, 36, 36);
     text-decoration: none;
     background-color: rgba(255, 251, 181);
+}
+
+.sampleButtons{
+    position: relative;
+    display: inline;
+    margin-right: 3em;
 }

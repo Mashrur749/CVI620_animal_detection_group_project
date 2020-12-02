@@ -9,10 +9,14 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography'
 const useStyles = makeStyles({
+    title: {
+        padding: ".2em"
+    },
     tableContainer: {
         minWidth: 650,
         width: "60vw",
-        margin:"4em auto"
+        margin:"4em auto",
+        
     },
     tableCell: {
         paddingRight: "50px"
@@ -24,9 +28,9 @@ export default function BasicTable(props) {
     const classes = useStyles();
 
     return (
-        <div>
+        <div >
             <header>
-                <Typography align={"center"} variant="h2" className={classes.galleryTitle}> {props.title} </Typography>
+                <Typography align={"center"} variant="h2" className={classes.title}> {props.title} </Typography>
             </header>
             <TableContainer component={Paper} className={classes.tableContainer}>
                 <Table  aria-label="simple table">
