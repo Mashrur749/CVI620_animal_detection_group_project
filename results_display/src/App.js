@@ -31,8 +31,8 @@ function App() {
       <nav>
 
         <div className="sampleButtons">
-          <Link onClick={(e)=> {handleClick(sampelState[0])}}>Smaple One</Link>
-          <Link className="sampleButton" onClick={(e)=> {handleClick(sampelState[1])}}>Smaple Two</Link>
+          <Link disabled onClick={(e)=> {handleClick(sampelState[0])}}>Test Set One</Link>
+          <Link className="sampleButton" onClick={(e)=> {handleClick(sampelState[1])}}>Test Set Two</Link>
         </div>
 
         <Link to={`/${currSet}/alg-result`}>Algorithm Result</Link>

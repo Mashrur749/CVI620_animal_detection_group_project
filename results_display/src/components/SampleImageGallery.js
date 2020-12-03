@@ -5,9 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
 
-
-
-
 const useStyles = makeStyles((theme) => ({
   root: {   
     flexGrow: 1,
@@ -40,7 +37,7 @@ export default function FullWidthGrid(props) {
 
     const classes = useStyles();
 
-  let imageTilesWithAnimal = imageData.withAnimal.map((tile, idx) => {
+  let sampleImages = imageData.withAnimal.map((tile, idx) => {
     return (<Grid key={idx} item xs={6} sm={3}>
         <Paper className={classes.paper}>
             <img className={classes.image} src={"/images/"+tile.filename} alt={tile.filename}/>
@@ -50,16 +47,6 @@ export default function FullWidthGrid(props) {
     </Grid>)
   })
 
-
-  let imageTilesWithoutAnimal = imageData.withoutAnimal.map((tile, idx) => {
-    return (<Grid key={idx} item xs={6} sm={3}>
-        <Paper className={classes.paper}>
-            <img className={classes.image} src={"/images/"+tile.filename} alt={tile.filename}/>
-            <Typography align={"left"}> Frame: {tile.frame} </Typography> 
-            <Typography align={"left"}> Model Certainty: {tile.model_certainty} </Typography>
-        </Paper>
-    </Grid>)
-  })
 
 
   return (
@@ -69,7 +56,7 @@ export default function FullWidthGrid(props) {
         </header>
         
         <Grid container spacing={0}>
-            {imageTilesWithAnimal}
+            {sampleImages}
         </Grid>
     </div>
   );
