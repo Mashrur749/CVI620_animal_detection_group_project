@@ -1,13 +1,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
+
+import ConfusionMatrixTable from './ConfusionMatrixTable'
+
 import Typography from '@material-ui/core/Typography'
+
+import confusionMatrix from '../data/confusion-matrix.json'
+
+console.log(confusionMatrix)
+
 
 const useStyles = makeStyles({
     title: {
@@ -31,35 +32,14 @@ export default function BasicTable(props) {
     return (
         <div >
             <header>
-                <Typography align={"center"} variant="h2" className={classes.title}> {props.title} </Typography>
+                <Typography align={"center"} variant="h2" className={classes.title}></Typography>
             </header>
-            <TableContainer component={Paper} className={classes.tableContainer}>
-                <Table  aria-label="simple table">
-                <TableHead>
-                    <TableRow>
-                        <TableCell>Pred/GroundTruth</TableCell>
-                        <TableCell className={classes.tableCell} align="right">Positive</TableCell>
-                        <TableCell className={classes.tableCell} align="right">Negative</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    <TableRow>
-                        <TableCell component="th" scope="row">
-                            Positive
-                        </TableCell>
-                        <TableCell className={classes.tableCell} align="right">TP</TableCell>
-                        <TableCell className={classes.tableCell} align="right">FP</TableCell>
-                    </TableRow>
-                    <TableRow>
-                    <TableCell component="th" scope="row">
-                        Negative
-                    </TableCell>
-                    <TableCell className={classes.tableCell} align="right">FN</TableCell>
-                    <TableCell className={classes.tableCell} align="right">TN</TableCell>
-                </TableRow>
-                </TableBody>
-                </Table>
-            </TableContainer>
+
+            <Typography align={"center"} variant="h3" className={classes.sectionTitle}>Test Set - 1 Confusion Matrix</Typography>
+            <ConfusionMatrixTable TP={confusionMatrix.testSetOne.TP} TN={confusionMatrix.testSetOne.TN} FP={confusionMatrix.testSetOne.FP} FN={confusionMatrix.testSetOne.FN} Precision={confusionMatrix.testSetOne.precision} Recall={confusionMatrix.testSetOne.recall} fMeasure={confusionMatrix.testSetOne.fMeasure}/>
+
+            <Typography align={"center"} variant="h3" className={classes.sectionTitle}>Test Set - 2 Confusion Matrix</Typography>
+            <ConfusionMatrixTable TP={confusionMatrix.testSetTwo.TP} TN={confusionMatrix.testSetTwo.TN} FP={confusionMatrix.testSetTwo.FP} FN={confusionMatrix.testSetTwo.FN} Precision={confusionMatrix.testSetTwo.precision} Recall={confusionMatrix.testSetTwo.recall} fMeasure={confusionMatrix.testSetTwo.fMeasure}/>
         </div>
     );
 }
