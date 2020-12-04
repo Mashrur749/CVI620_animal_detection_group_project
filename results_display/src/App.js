@@ -73,7 +73,7 @@ function App() {
         <Route path={`/test-set-2/sample-image-set`} render={() => <SampleImageGallery data={testSetTwoPreds} dataset={currSet} title="Sample Image Set"/>} />
         <Route path={`/test-set-2/alg-result`} render={() => <ImageGallery data={testSetTwoPreds} dataset={currSet} title="Algorithm Results"/>} />
 
-        <Route path={`/confusion-matrix`} render={() => <ConfusionMatrix dataset={currSet} title="Confusion Matrix"/>} />        
+        <Route path={`/confusion-matrix`} render={() => <ConfusionMatrix dataset={currSet} title="Confusion Matrix" disableBtn={disableBtn}/>} />        
         
       </Switch>
     </div>
