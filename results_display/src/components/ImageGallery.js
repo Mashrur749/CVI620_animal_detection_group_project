@@ -37,29 +37,34 @@ export default function FullWidthGrid(props) {
     
     const imageData = props.data;
     const title = props.title;
+    console.log(props)
 
     const classes = useStyles();
 
-  let imageTilesWithAnimal = imageData.withAnimal.map((tile, idx) => {
-    return (<Grid key={idx} item xs={6} sm={3}>
+  let imageTilesWithAnimal = [];
+  let imageTilesWithoutAnimal = [];  
+  
+  console.log(props);
+
+  props.data.forEach((e, idx) => {
+
+    let comp = 
+      (<Grid key={idx} item xs={6} sm={3}>
         <Paper className={classes.paper}>
-            <img className={classes.image} src={"/images/"+tile.filename} alt={tile.filename}/>
-            <Typography align={"left"}> Frame: {tile.frame} </Typography> 
-            <Typography align={"left"}> Model Certainty: {tile.model_certainty} </Typography>
+          <img className={classes.image} src={`/images/${props.dataset}-preds/`+e.filename} alt={e.filename}/>
         </Paper>
-    </Grid>)
+      </Grid>);
+
+
+    if(e.hasAnimal === 1){
+      imageTilesWithAnimal.push(comp)
+    } else{
+      imageTilesWithoutAnimal.push(comp)
+    }
   })
 
 
-  let imageTilesWithoutAnimal = imageData.withoutAnimal.map((tile, idx) => {
-    return (<Grid key={idx} item xs={6} sm={3}>
-        <Paper className={classes.paper}>
-            <img className={classes.image} src={"/images/"+tile.filename} alt={tile.filename}/>
-            <Typography align={"left"}> Frame: {tile.frame} </Typography> 
-            <Typography align={"left"}> Model Certainty: {tile.model_certainty} </Typography>
-        </Paper>
-    </Grid>)
-  })
+
 
 
   return (

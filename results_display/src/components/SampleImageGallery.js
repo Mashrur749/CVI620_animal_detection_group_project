@@ -35,12 +35,14 @@ export default function FullWidthGrid(props) {
     const imageData = props.data;
     const title = props.title;
 
+
     const classes = useStyles();
 
-  let sampleImages = imageData.withAnimal.map((tile, idx) => {
+ 
+  let sampleImages = imageData.map((tile, idx) => {
     return (<Grid key={idx} item xs={6} sm={3}>
         <Paper className={classes.paper}>
-            <img className={classes.image} src={"/images/"+tile.filename} alt={tile.filename}/>
+            <img className={classes.image} src={`/images/${props.dataset}/`+tile.filename} alt={tile.filename}/>
             <Typography align={"left"}> Frame: {tile.frame} </Typography> 
             <Typography align={"left"}> Model Certainty: {tile.model_certainty} </Typography>
         </Paper>

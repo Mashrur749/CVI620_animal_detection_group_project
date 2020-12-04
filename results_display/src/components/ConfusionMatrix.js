@@ -7,7 +7,6 @@ import Typography from '@material-ui/core/Typography'
 
 import confusionMatrix from '../data/confusion-matrix.json'
 
-console.log(confusionMatrix)
 
 
 const useStyles = makeStyles({
