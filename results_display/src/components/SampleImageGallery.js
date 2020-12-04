@@ -43,8 +43,6 @@ export default function FullWidthGrid(props) {
     return (<Grid key={idx} item xs={6} sm={3}>
         <Paper className={classes.paper}>
             <img className={classes.image} src={`/images/${props.dataset}/`+tile.filename} alt={tile.filename}/>
-            <Typography align={"left"}> Frame: {tile.frame} </Typography> 
-            <Typography align={"left"}> Model Certainty: {tile.model_certainty} </Typography>
         </Paper>
     </Grid>)
   })
