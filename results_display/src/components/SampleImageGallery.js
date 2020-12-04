@@ -26,7 +26,6 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
       width: "300px",
-
   }
 }));
 
@@ -38,7 +37,6 @@ export default function FullWidthGrid(props) {
 
     const classes = useStyles();
 
- 
   let sampleImages = imageData.map((tile, idx) => {
     return (<Grid key={idx} item xs={6} sm={3}>
         <Paper className={classes.paper}>
