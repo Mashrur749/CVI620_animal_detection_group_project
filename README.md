@@ -3,6 +3,8 @@
 ## Summary
 This project is aimed at discovering if an object detection algorithm trained on a specific set of images can transfer what it has learnt to a set of images in a different context.
 
+View results at https://guarded-hollows-07709.herokuapp.com/
+
 ## Technologies
 - [NodeJS](https://nodejs.org/en/)
 - [Tensorflow](https://www.tensorflow.org/)
@@ -19,8 +21,6 @@ Requires React
   `cd results-display`
   
   `npm start`
-
-Project is also hosted on Heroku:
 
 
 ### To Run the Test Sets for Yoursself
